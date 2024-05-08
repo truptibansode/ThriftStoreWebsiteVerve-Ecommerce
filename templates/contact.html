@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="/static/images/verve.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/contact.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&family=Kalnia:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <!-- ITALIANA GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
+
+    <!-- FONTAWESOME LINk -->
+    <script src="https://kit.fontawesome.com/226d183df1.js" crossorigin="anonymous"></script>
+    <!-- highlighter -->
+    <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+        <defs>
+            <filter id="marker-shape">
+                <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+            </filter>
+        </defs>
+    </svg>
+    <!-- MAP TILER  -->
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <!-- TRAIL EFFECTS -->
+        <section>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand d-inline-flex" href="/">
+                    <img src="/static/images/verve.png" alt="VERVE" width="100px" height="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/accessory">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/add-product">Add Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/myaccount">my account</a>
+                        </li>
+                    </ul>
+
+                    <form onsubmit="return searchAndScroll(event)" class="d-flex me-auto">
+                        <input class="form-control" type="text" id="searchInput" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn custom-btn mx-1" type="submit" onclick="searchAndScroll()"><i
+                                class="fa-solid fa-search"></i></button>
+                    </form>
+
+                    <!-- Logout button -->
+                    <form class="d-flex me-auto" action="/logout" method="post">
+                        <button class="btn custom-btn" type="submit">Log Out</button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                       <a href="/home" style="text-decoration: none; color: #000;"> 
+                        <li class="nav-item cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p id="count">0</p>
+                        </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main id="contact-main">
+
+        <div class="container-fluid contact-Box white">
+            <h1>Contact Verve</h1>
+            <p class="dmsans">Contact us to let us know your feedback!</p>
+        </div>
+
+        <section class="m-2 d-flex">
+            <div class="formDiv-contact p-2">
+                <form action="/contact" method="post" class="contact-form m-3">
+                    <h4>Contact Form</h4>
+                    <div class="mb-3 formInput">
+                        <label for="contactName" class="form-label">Name</label>
+                        <input class="form-control form-control-sm" id="contactName" name="contactName" type="text"
+                            placeholder="Enter full name" aria-label="Name">
+                    </div>
+                    <div class="mb-3 formInput">
+                        <div class="row">
+                            <div class="col">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" id="contactEmail" name="contactEmail"
+                                    class="form-control form-control-sm" placeholder="example@xyz.com"
+                                    aria-label="contactPhone">
+                            </div>
+                            <div class="col">
+                                <label for="contactPhone" class="form-label">Phone</label>
+                                <input type="tel" maxlength="12" id="contactPhone" name="contactPhone"
+                                    class="form-control form-control-sm" placeholder="Enter 10-12 digit phone number"
+                                    aria-label="contactPhone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 formInput">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea class="form-control form-control-sm" id="contactMessage" name="contactMessage"
+                            placeholder="Enter your feedback" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 formButton">
+                        <button class="btn form-submitButton" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="whyContactDiv p-4">
+                <h3>Verve's Message</h3>
+                <p>
+                    At Verve, we value your feedback and take every comment and complaint seriously. Your satisfaction
+                    is our priority, and we are committed to addressing any concerns you may have promptly and
+                    effectively. Whether you have a question about our products, need assistance with an order, or want
+                    to provide feedback, our dedicated team is here to assist you. Thank you for choosing Verve; we look
+                    forward to hearing from you.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact-Info" class="mb-2">
+            <div class="container-fluid p-2 d-flex">
+                <div class="contact1 bg1">
+                    <div class="d-flex myInfoFlex">
+                        <i class="fa-solid fa-phone-volume m-1"></i>
+                        <h2 class="m-1">+91 3355662277</h2>
+                    </div>
+                    <p>You can directly contact our customer care personnels with this contact number.</p>
+                </div>
+                <div class="contact1 bg2">
+                    <div class="d-flex myInfoFlex">
+                        <i class="fa-solid fa-envelope-open-text m-1"></i>
+                        <h2 class="m-1">vervestore@gmail.com</h2>
+                    </div>
+                    <p>You can directly contact our customer care personnels on this E-mail.</p>
+                </div>
+                <div class="contact1 bg3">
+                    <div class="d-flex myInfoFlex">
+                        <i class="fa-solid fa-location-dot m-1"></i>
+                        <h2 class="m-1">Mumbai</h2>
+                    </div>
+                    <p>You can directly vist our customer care center at this Location.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="myMapSection my-2">
+            <h2>Our Location</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer bg-dark noise pt-5 dmsans">
+
+        <div class="container text-center p-4">
+            <img src="/static/images/Verve.png" alt="Verve Inc." width="250px">
+            <figcaption>Verve Inc. Pvt. Ltd.</figcaption>
+        </div>
+
+        <div class="footlinks container d-flex p-2">
+            <!-- first div links-->
+            <div class=" fl1 p-2">
+
+                <ul class="links">
+                    <li class="bold hlist">About Us</li>
+
+                    <li>Privacy Policy</li>
+
+                    <li>Terms & Conditions</li>
+
+                    <li>Buyer Protection Policy</li>
+
+                    <li>Seller Policy</li>
+                </ul>
+
+            </div>
+
+            <div class=" fl2 p-2">
+
+                <ul class="links">
+
+                    <li class="bold hlist">Community</li>
+
+                    <li>Verve Blogs</li>
+
+                </ul>
+
+            </div>
+
+            <div class=" fl3 p-2">
+
+                <ul class="links">
+
+                    <li class="bold hlist">Address</li>
+
+                    <li><i class="fa-solid fa-location-dot"></i> 13T, 13th floor, Ivy Phase, Willow Street, sector 87,
+                        folkloreville, 4001989.</li>
+
+                    <li><i class="fa-solid fa-phone"></i> +91-97654-28109</li>
+
+                    <li><i class="fa-solid fa-envelope"></i> trptbnsd@gmail.com</li>
+
+                </ul>
+
+            </div>
+
+            <div class="fl4 p-2">
+
+                <ul class="links">
+                    <li class="bold hlist">Follow Socials</li>
+
+                    <li> <a href="https://www.instagram.com/tobesotrupti/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                            target="_blank" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            @tobesotrupti</a></li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/truptibansode/" target="_blank" title="LinkedIn"><i
+                                class="fa-brands fa-linkedin"></i> Trupti Bansode</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/truptibansode/" target="_blank" title="GitHub"><i
+                                class="fa-brands fa-github"></i> @truptibansode</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/people/Trupti-Bansode/pfbid0cRdSsrC7rCwSELwutHUoF3eaAntHnJjzkmshWJK9T5fmfz8edGLJCnS14rP3kyLLl/"
+                            target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i>
+                            @Trupti-Bansode</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        maptilersdk.config.apiKey = 'v1FtNjw9A6U4WR5of7iz';
+        const map = new maptilersdk.Map({
+            container: 'map', // container's id or the HTML element to render the map
+            style: "streets-v2",
+            center: [72.937088, 19.151850], // starting position [lng, lat]
+            zoom: 14, // starting zoom
+        });
+    </script>
+
+    <!-- <script async defer
+        src="https://api.maptiler.com/maps/streets-v2/style.json?key=v1FtNjw9A6U4WR5of7iz&callback=initMap">
+    </script> -->
+
+    <script src="/static/javascript/script.js"></script>
+    <script src="/static/javascript/search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

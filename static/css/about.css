@@ -1,0 +1,121 @@
+#topSection-about{
+    /* background: url(/static/images/aboutusbanner-02.jpg); */
+    background: url(/static/images/aboutusbanner-02.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top-banner{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-banner h1{
+    font-family: 'italiana', serif;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: white !important;
+    font-size: 5em !important;
+}
+
+.top-banner p{
+    letter-spacing: 3px;
+}
+
+.top-banner a button{
+    border: none;
+    margin: 15px 0 !important;
+    padding: 10px 25px !important;
+    background-color: #fff;
+    border-radius: 5px !important;
+    font-family: 'dm sans', serif;
+    font-size: 1em !important;
+    font-weight: 500 !important;
+}
+
+@font-face {
+    font-family: "gt-alpina";
+    src: url(/static/fonts/GT-Alpina-Italic-VAR-Trial.ttf);
+}
+
+.verve-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 3em !important;
+    font-family: 'gt-alpina';
+}
+
+.paragraph-about{
+    width: 60%;
+}
+
+.row .col{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: 'dm sans', serif;
+    letter-spacing: 1px;
+}
+
+.col p{
+    font-family: 'gt-alpina';
+}
+
+.col-1{
+    background: #191917c0;
+    color: #fff;
+}
+
+.col-1:hover{
+    background: #191917;
+}
+
+.col-2{
+    background: #352d1fc0;
+    color: #fff;
+}
+.col-2:hover{
+    background: #352d1f;
+    color: #fff;
+}
+.col-3{
+    background: #4d4439c0;
+    color: #fff;
+}
+
+.col-3:hover{
+    background: #4d4439;
+    color: #fff;
+}
+
+.col-4{
+    background: #725c4bc0;
+    color: #fff;
+}
+
+.col-4:hover{
+    background: #725c4b;
+    color: #fff;
+}
+
+
+.col-5{
+    background: #b18c71c0;
+    color: #fff;
+}
+.col-5:hover{
+    background: #b18c71;
+    color: #fff;
+}

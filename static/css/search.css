@@ -1,0 +1,37 @@
+.search-container{
+    background-color: #ee568b56 !important;
+    height: 600px !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-result-container{
+    background-color: white;
+    border-radius: 10px !important;
+    width: 60% !important;
+    height: 569px !important;
+}
+
+.search-result-container h1{
+    font-size: 1.7em !important;
+    color: #5c5e5e;
+}
+
+.my-result{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 5px !important;
+}
+
+.my-result h5{
+    font-size: 1.3em !important;
+}
+
+.email-result{
+    font-size: 0.6em !important;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="/static/images/verve.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&family=Kalnia:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FONTAWESOME LINk -->
+    <script src="https://kit.fontawesome.com/226d183df1.js" crossorigin="anonymous"></script>
+    <!-- CUSTOM JS -->
+    <script src="/static/javascript/login.js"></script>
+    <!-- highlighter -->
+    <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+        <defs>
+            <filter id="marker-shape">
+                <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+            </filter>
+        </defs>
+    </svg>
+</head>
+
+<body>
+    
+        <!-- TRAIL EFFECTS -->
+        <section>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </section>
+    <main>
+        <section id="section1" class="dmsans">
+            {% if myalerter %}
+            <div id="popup-container">
+                <div id="popup-content">
+                    <span class="close-button"><i class="fa-regular fa-circle-xmark"></i></span>
+                    <h4 id="h4-alert">{{ myalerter }}</h4>
+                </div>
+            </div>
+            {% endif %}            
+            <div class="container-fluid">
+                <div class="d-flex my-login dmsans flex-wrap">
+                    <div class="side-img">
+                        <img src="/static/images/Login-cuate.svg    " alt="">
+                    </div>
+                    <div class="m-2 p-2 form-container">
+                        <div class="formbox">
+                            <h2 class="text-center my-2"><span class="highlight kalnia">Sign-In</span></h2>
+                            <form action="/login" method="post" class="log-form" enctype="multipart/form-data">
+                                <div class="myinput">
+                                    <label for="username"><i class="fa-regular fa-at"></i></label>
+                                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                                </div>
+                                <div class="myinput">
+                                    <label for="password"><i class="fa-regular fa-eye"></i></label>
+                                    <input type="password" id="password" name="password" maxlength="20" placeholder="Enter Password"
+                                        required>
+                                </div>
+                                <div class="myinput-check">
+                                    <input type="checkbox" id="showPassword">
+                                    <!-- Checkbox for toggling password visibility -->
+                                    <label for="showPassword">Show Password</label>
+                                </div>
+                                <input type="submit" class="enter-btn"  id="login-form" value="Sign In">
+                            </form>
+                            <p><a href="/forgot-password">forgot password?</a></p>
+                            <p>New to Verve? <a href="/register">Sign Up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/static/javascript/script.js"></script>
+
+<script>
+        // for password visibility
+
+    // Get the password input field and the checkbox
+const passwordInput = document.getElementById("password");
+const showPasswordCheckbox = document.getElementById("showPassword");
+
+// Add event listener to the checkbox
+showPasswordCheckbox.addEventListener("change", function() {
+    // Toggle the password input type between "password" and "text"
+    if (this.checked) {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+});
+
+// ANOTHER
+
+document.addEventListener("DOMContentLoaded", function() {
+    var popupContainer = document.getElementById("popup-container");
+    var closeButton = document.querySelector(".close-button");
+
+    // Show the pop-up when the page loads
+    popupContainer.style.display = "block";
+
+    // Close the pop-up when the close button is clicked
+    closeButton.addEventListener("click", function() {
+        popupContainer.style.display = "none";
+    });
+});
+
+</script>
+
+</body>
+
+
+</html>

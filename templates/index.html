@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="/static/images/verve.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&family=Kalnia:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FONTAWESOME LINk -->
+    <script src="https://kit.fontawesome.com/226d183df1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar navbar-expand-lg bg-body-tertiary justify-content-center">
+            <div class="container-fluid ">
+                <a class="navbar-brand d-inline-flex" href="/">
+                    <img src="/static/images/verve.png" alt="VERVE" width="100px" height="60px" class="mx-4">
+                    <p class="dmsans capitalize" style="font-size: 0.8em; margin-top: 20px;">Sustainably styled stories!
+                    </p>
+                </a>
+                <div class="nav-item">
+                    <a class="nav-link custom-btn" onclick="login()">Get Started</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- TRAIL EFFECTS -->
+        <section>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </section>
+
+    </header>
+
+    <!-- highlighter -->
+    <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+        <defs>
+            <filter id="marker-shape">
+                <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+            </filter>
+        </defs>
+    </svg>
+    <main>
+        <section id="sec1">
+            <div class="container-fluid grey">
+                <div class="d-flex flex-wrap-lg sec1">
+                    <div class="m-2 landing-title ">
+                        <h2 class="dmsans m-3 mb-3">Discover the joy <br> of<span class="kalnia-real pink"><span
+                                    class="grey highlight">sustainable</span> fashion</span> at Verve.</h2>
+                        <p class="mt-3 m-3 dmsans capitalize" id="demo">
+                            <!-- where style meets conscience, and every purchase tells a planet-friendly story. -->
+                        </p>
+                        <button type="button" onclick="login()" class="btn custom-btn mx-3">Get
+                            Started</button>
+                    </div>
+                    <div class="p-0 sec1-img">
+                        <img src="/static/images/Online wishes list-cuate.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FLIP CARDS -->
+
+        <section id="mycard" class="my-5">
+            <div class="container c-div mb-2">
+                <h2 class="m-2 mx-0 dmsans m-3 grey capitalize lspace">verve <span
+                        class="kalnia highlight">SUMMER</span> </h2>
+            </div>
+            <div class="container d-flex fc-cont">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <!-- <h2>Front Side</h2>
+                    <p>This is the front side of the card</p> -->
+                            <img src="/static/images/summer2.jpeg" alt="" width="auto" height="500px">
+
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>Summer Accessories</h5>
+                            <p class="m-3">Elevate your style with our magnificent range, featuring trendy designs and
+                                exquisite craftsmanship. From statement jewelry to chic handbags! Discover the allure of
+                                luxury fashion and shop our all-new arrivals today!</p>
+
+                            <button type="button" onclick="login()" class="m-3">SHOP <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/static/images/Upscales.ai_1707755847839.jpeg" alt="" width="auto" height="500px">
+
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>Summer Collection</h5>
+                            <p class="m-3"> Discover a treasure trove of warm-weather essentials. From airy tops to
+                                relaxed bottoms, our collection embraces the laid-back allure of summer living. Elevate
+                                your summer wardrobe! shop our curated collection now!</p>
+                            <button type="button" onclick="login()" class="m-3">SHOP <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/static/images/summer1.jpeg" alt="" width="auto" height="500px">
+
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>Summer Dresses</h5>
+                            <p class="m-3">Embrace the spirit of summer with our vibrant collection of dresses! From
+                                flowy maxi dresses to playful sundresses, our selection captures the essence of carefree
+                                summer style. Feel effortlessly chic and cool. shop our summer dress collection today!
+                            </p>
+                            <button type="button" onclick="login()" class="m-3">SHOP <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- CUSTOMER REVIEW -->
+        <section id="review" class="p-2">
+            <h2 class="text-center m-3 p-3 dmsans grey"><span class="bigfont">Customer <span
+                        class="highlight kalnia ">REVIEWS</span></span></h2>
+            <div class="box-cont">
+                <div id="slider-container" class="box-in d-flex">
+                    <div class="indicator">
+                        <span class="mybtn active"></span>
+                        <span class="mybtn"></span>
+                    </div>
+                    <div class="project-cont grey">
+                        <div class="slide-row" id="slide">
+                            <div class="p-4 box1">
+                                <img src="/static/images/model1.jpeg" alt="customer-1" width="100px">
+                                <h5 class="highlight-sm black">Emily W. Woods</h5>
+                                <p>
+                                    "Verve is my go-to place for unique and sustainable fashion finds! The quality is
+                                    amazing, and I love that each piece has a story. Highly recommend!"
+                                </p>
+                            </div>
+                            <div class="p-4 box1">
+                                <img src="/static/images/model8.jpg" alt="customer-1" width="100px">
+                                <h5 class="highlight-sm black"> Alex P. Greene</h5>
+                                <p>
+                                    "Fantastic experience shopping at Verve. The eco-friendly focus is evident, and I
+                                    appreciate the curated selection. Fast shipping and excellent customer service!"
+                                </p>
+                            </div>
+                            <div class="p-4 box1">
+                                <img src="/static/images/model4.jpg" alt="customer-1" width="100px">
+                                <h5 class="highlight-sm black">Sarah B. Maloney</h5>
+                                <p>
+                                    "As a thrifting enthusiast, Verve is a gem. The variety of styles and sizes is
+                                    impressive. It's my secret weapon for staying stylish on a budget."
+                                </p>
+                            </div>
+                            <div class="p-4 box1">
+                                <img src="/static/images/model6.jpg" alt="customer-1" width="100px">
+                                <h5 class="highlight-sm black">Jackie M. Cooper</h5>
+                                <p>
+                                    "Verve combines style with a conscience. The website is easy to navigate, and I love
+                                    the detailed product descriptions. My sustainable wardrobe wouldn't be complete
+                                    without it."
+                                </p>
+                            </div>
+                            <div class="p-4 box1">
+                                <img src="/static/images/model9.jpg" alt="customer-1" width="100px">
+                                <h5 class="highlight-sm black">Raj Singh</h5>
+                                <p>
+                                    "The Verve team truly understands the importance of sustainable fashion. The clothes
+                                    are trendy, affordable, and the fact that they contribute to reducing textile waste
+                                    makes it even better."
+                                </p>
+                            </div>
+                            <div class="p-4 box1">
+                                <img src="/static/images/model7.jpg" alt="customer-1" width="100px">
+                                <h5 class="highlight-sm black">Maya Carson</h5>
+                                <p>
+                                    "Great finds, great prices, great cause. Verve has become my favorite online thrift
+                                    store. It's refreshing to support a business that values sustainability and style."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- how to use Verve div -->
+
+        <section id="howto" class="my-5 mb-0">
+
+            <div class="container howto">
+                <h2 class="m-2 mx-0 dmsans  text-center grey capitalize">How does Verve <span
+                        class="kalnia highlight">WORK?</span></h2>
+
+                <div class="d-flex process mt-3">
+                    <div class="imgdiv">
+                        <img src="/static/images/Prototyping process-pana.svg" alt="" width="600px">
+                    </div>
+                    <div class="p-1 mt-2 textdiv">
+                        <div class="number pink">
+                            <p>#1</p>
+                        </div>
+                        <p class="grey dmsans">
+                            <span class="bold kalnia bigfont m-3"><span class="highlight-sm black">Create</span> a Verve
+                                account!</span><br><br>
+                            Your Verve account is your small business identity. It will have all the details your buyers
+                            will see, trust
+                            & shop from directly! It encapsulates your brand identity, reflecting reliability and
+                            fostering a sense of
+                            trust that encourages seamless transactions and a positive shopping experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex process mt-3">
+
+                    <div class="imgdiv">
+                        <img src="/static/images/Ecommerce campaign-pana.svg" alt="" width="600px"
+                            style="margin-bottom: -23px;">
+                    </div>
+
+                    <div class="p-1 mt-2 textdiv">
+                        <div class="number pink">
+                            <p>#2</p>
+                        </div>
+                        <p class="grey dmsans m-2">
+                            <span class="bold kalnia bigfont m-3"><span class="highlight-sm black">Add</span> your
+                                products to
+                                showcase your offerings.</span><br><br>
+                            Enhance your Verve profile by adding a diverse range of products or services, providing your
+                            customers
+                            with
+                            a comprehensive view of what your business has to offer. Utilize appealing visuals and
+                            detailed
+                            descriptions
+                            to capture their attention and boost engagement.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- <div class="d-flex process mt-3">
+
+                    <div class="imgdiv">
+                        <img src="/static/images/Online-pana.svg" alt="" width="600px" style="margin-bottom: -23px;">
+                    </div>
+
+                    <div class="p-1 textdiv mt-2">
+                        <div class="number pink">
+                            <p>#3</p>
+                        </div>
+                        <p class="grey dmsans">
+                            <span class="bold kalnia bigfont m-3"><span class="highlight-sm black">Connect</span> with
+                                your audience
+                                through engaging content.</span><br><br>
+                            Utilize the power of social media by connecting your Verve link to various platforms. Share
+                            updates,
+                            promotions,
+                            and engaging content to build a loyal customer base. Leverage the personalized nature of
+                            your Verve link
+                            to create
+                            a direct and meaningful connection with your audience.
+                        </p>
+                    </div>
+
+                </div> -->
+
+                <div class="d-flex process mt-3">
+
+
+                    <div class=" imgdiv">
+                        <img src="/static/images/Online Review-pana.svg" alt="" width="500px">
+                    </div>
+
+
+                    <div class="p-1 textdiv  mt-2">
+                        <div class="number pink">
+                            <p>#3</p>
+                        </div>
+                        <p class="grey dmsans">
+                            <span class="bold kalnia bigfont m-3"><span class="highlight-sm black">Receive</span> buying
+                                requests and
+                                connect with potential
+                                buyers.</span><br><br>
+                            As customers express interest in your products, respond promptly to buying requests. Engage
+                            in
+                            conversations to
+                            understand their needs and provide personalized assistance, building a rapport that
+                            encourages successful
+                            transactions.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="d-flex process mt-3">
+
+                    <div class=" imgdiv">
+                        <img src="/static/images/Successful purchase-pana.svg" alt="" width="600px"
+                            style="margin-top: -50px;">
+                    </div>
+
+                    <div class="p-1 textdiv mt-2">
+                        <div class="number pink">
+                            <p>#4</p>
+                        </div>
+                        <p class="grey dmsans">
+                            <span class="bold kalnia bigfont m-3"><span class="highlight-sm black">List</span> and sell
+                                your products
+                                seamlessly on Verve.</span><br><br>
+                            Once you receive buying requests, list your products for sale on Verve. Provide clear
+                            product details,
+                            negotiate
+                            terms, and finalize transactions securely. Enjoy the simplicity of selling your thrifted
+                            items directly
+                            through your Verve link.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FAQ section -->
+        <section id="faq">
+
+            <div class="container faqcont p-5 mt-5">
+
+                <h2 class=" dmsans m-3 mb-5 text-center grey"><span class="kalnia highlight bigfont">FAQs</span></h2>
+
+                <div>
+
+                    <div class="question dmsans">
+                        <h4>Who can use Verve?</h4>
+                        <img src="/static/images/add.png" alt="plus" class="plus" width="23px">
+                        <img src="/static/images/minus.png" alt="minus" class="minus hidden" width="23px">
+                    </div>
+
+                    <p class="faqpara hidden dmsans">
+                        Verve is designed for everyone! Whether you're a fashion enthusiast, eco-conscious shopper, or
+                        someone
+                        looking to make sustainable choices, Verve welcomes individuals from all walks of life. Our
+                        platform is
+                        dedicated to providing a stylish and sustainable shopping experience for anyone who values the
+                        planet-friendly journey of thrifting. <br> Verve caters to a diverse community that appreciates
+                        the unique
+                        charm of thrifted finds. Fashion-forward individuals, environmentally conscious consumers, and
+                        those seeking
+                        budget-friendly alternatives can all find something special at Verve. Our inclusive platform
+                        invites
+                        everyone to join the movement towards sustainable fashion, embracing the joy of second-hand
+                        treasures and
+                        contributing to a more eco-friendly and socially responsible future.
+                    </p>
+
+                </div>
+
+                <hr>
+                <div>
+                    <div class="question dmsans">
+                        <h4>How will I get more orders using Verve?</h4>
+                        <img src="/static/images/add.png" alt="plus" class="plus" width="23px">
+                        <img src="/static/images/minus.png" alt="minus" class="minus hidden" width="23px">
+                    </div>
+
+                    <p class="faqpara hidden dmsans">
+                        "Boosting your reach with Verve is a style game-changer! 🚀 Flaunt your thrifty treasures on
+                        social
+                        media—snap a pic, tag us, and share the sustainable love! 📸💚 Engage with our vibrant
+                        community, join
+                        discussions, and be a trendsetter in the eco-fashion scene. 🌱✨ Don't forget to sprinkle those
+                        #VerveVibes
+                        everywhere! The more you share, the bigger your style empire becomes. Let's make sustainable
+                        fashion the
+                        talk of the town! 🌍💃"
+                    </p>
+                </div>
+                <hr>
+
+                <div>
+                    <div class="question dmsans">
+                        <h4>How do I maximize my earnings using Verve?</h4>
+                        <img src="/static/images/add.png" alt="plus" class="plus" width="23px">
+                        <img src="/static/images/minus.png" alt="minus" class="minus hidden" width="23px">
+                    </div>
+
+                    <p class="faqpara hidden dmsans">
+                        To maximize earnings with Verve, consider the following strategies: <br>
+                        <span class="bold">Mix & Match Magic:</span> <br>
+                        - 🌈 Curate your Verve shop with a mix of styles—from vintage vibes to trending threads. Keep it
+                        fresh and
+                        exciting to stand out!
+                        <br>
+
+                        <span class="bold">Bundle Bliss:</span>
+                        - 🎉 Boost earnings by offering irresistible bundle deals. Make it easy for shoppers to say,
+                        "Add to Cart"
+                        and turn clicks into hauls.
+
+                        <br>
+
+                        <span class="bold">Insta-Glam:</span>
+                        - 📸 Flaunt your thrifted treasures on Insta, TikTok, or your fav platform. Use trendy hashtags
+                        and be the
+                        talk of the timeline!
+                        <br>
+
+                        <span class="bold">Positive Vibes Only:</span>
+                        - 👏 Collect those 5-star reviews! Happy customers mean repeat business. Let positive vibes be
+                        your secret
+                        weapon to boost earnings. #VerveWinning✨
+                        <br>
+                    </p>
+                </div>
+
+                <hr>
+                <div>
+                    <div class="question dmsans">
+                        <h4>How much commission does Verve take?</h4>
+                        <img src="/static/images/add.png" alt="plus" class="plus" width="23px">
+                        <img src="/static/images/minus.png" alt="minus" class="minus hidden" width="23px">
+                    </div>
+
+                    <p class="faqpara hidden dmsans">
+                        Verve takes 5% commission for all orders and 10% commission for orders that are brought to you
+                        by Verve.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <div class="question dmsans">
+                        <h4>When will I get paid?</h4>
+                        <img src="/static/images/add.png" alt="plus" class="plus" width="23px">
+                        <img src="/static/images/minus.png" alt="minus" class="minus hidden" width="23px">
+                    </div>
+
+                    <p class="faqpara hidden dmsans">
+                        You get paid within 48-72 hours after a product has been shipped.
+                    </p>
+                </div>
+                <hr>
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer class="footer bg-dark noise pt-5 dmsans">
+
+        <div class="container text-center p-4">
+            <img src="/static/images/Verve.png" alt="Verve Inc." width="250px">
+            <figcaption>Verve Inc. Pvt. Ltd.</figcaption>
+        </div>
+
+        <div class="footlinks container d-flex p-2">
+            <!-- first div links -->
+            <div class=" fl1 p-2">
+
+                <ul class="links">
+                    <li class="bold hlist">About Us</li>
+
+                    <li>Privacy Policy</li>
+
+                    <li>Terms & Conditions</li>
+
+                    <li>Buyer Protection Policy</li>
+
+                    <li>Seller Policy</li>
+                </ul>
+
+            </div>
+
+            <div class=" fl2 p-2">
+
+                <ul class="links">
+
+                    <li class="bold hlist">Community</li>
+
+                    <li>Verve Blogs</li>
+
+                </ul>
+
+            </div>
+
+            <div class=" fl3 p-2">
+
+                <ul class="links">
+
+                    <li class="bold hlist">Address</li>
+
+                    <li><i class="fa-solid fa-location-dot"></i> 13T, 13th floor, Ivy Phase, Willow Street, sector 87,
+                        folkloreville, 4001989.</li>
+
+                    <li><i class="fa-solid fa-phone"></i> +91-97654-28109</li>
+
+                    <li><i class="fa-solid fa-envelope"></i> trptbnsd@gmail.com</li>
+
+                </ul>
+
+            </div>
+
+            <div class="fl4 p-2">
+
+                <ul class="links">
+                    <li class="bold hlist">Follow Socials</li>
+
+                    <li> <a href="https://www.instagram.com/tobesotrupti/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                            target="_blank" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            @tobesotrupti</a></li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/truptibansode/" target="_blank" title="LinkedIn"><i
+                                class="fa-brands fa-linkedin"></i> Trupti Bansode</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/truptibansode/" target="_blank" title="GitHub"><i
+                                class="fa-brands fa-github"></i> @truptibansode</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/people/Trupti-Bansode/pfbid0cRdSsrC7rCwSELwutHUoF3eaAntHnJjzkmshWJK9T5fmfz8edGLJCnS14rP3kyLLl/"
+                            target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i>
+                            @Trupti-Bansode</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- CUSTOM JS -->
+
+    <script src="/static/javascript/script.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

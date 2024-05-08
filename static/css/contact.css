@@ -1,0 +1,177 @@
+#contact-main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-Box {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/static/images/contactBanner.jpeg");
+    background-size: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-Box h1 {
+    font-family: 'italiana', serif;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: #fff !important;
+    font-size: 5em !important;
+}
+
+.contact-Box p {
+    letter-spacing: 3px;
+}
+
+@font-face {
+    font-family: "gt-alpina";
+    src: url(/static/fonts/GT-Alpina-Italic-VAR-Trial.ttf);
+}
+
+.formDiv-contact {
+    width: 80% !important;
+    margin: 30px 20px !important;
+    /* background: linear-gradient(to left, #ffe1e9, #faebbe); */
+    background-color: #ffe1e9;
+    border-radius: 10px !important;
+}
+
+form h4 {
+    text-align: center;
+    font-family: "gt-alpina";
+    font-size: 2em !important;
+}
+
+.formInput label {
+    font-family: 'dm sans', serif !important;
+    font-size: 0.98em !important;
+}
+
+.formInput input,
+textarea {
+    font-family: 'dm sans', serif;
+    background: #ffffff9c !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 5px 15px !important;
+}
+
+.form-submitButton {
+    background-color: #ee568b !important;
+    border-radius: 10px !important;
+    padding: 6px 20px !important;
+    font-family: 'dm sans', serif;
+    color: #fff !important;
+}
+
+.form-submitButton:hover {
+    border: 1px solid #ee568b !important;
+    background: transparent !important;
+    color: #ee568b !important;
+}
+
+.formInput input:focus,
+textarea:focus {
+    outline: none !important;
+}
+
+.whyContactDiv {
+    width: 34% !important;
+    margin: 30px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px !important;
+    background-color: #dee4d7;
+}
+
+
+.whyContactDiv h3 {
+    font-family: "gt-alpina";
+    font-size: 2em;
+}
+
+.whyContactDiv p {
+    font-family: 'dm sans', serif;
+    font-size: 0.9em !important;
+    text-align: justify;
+}
+
+.contact1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 40px 70px !important;
+    margin: 20px !important;
+    background-color: #ffe1e9;
+    border-radius: 10px !important;
+}
+
+.contact1 p {
+    font-size: 0.9em !important;
+    font-family: 'dm sans', serif !important;
+}
+
+.myInfoFlex {
+    margin: 20px 0px !important;
+    font-size: 1.3em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg2 .myInfoFlex,
+.bg3 .myInfoFlex {
+    margin-top: -15px !important;
+}
+
+.myInfoFlex i {
+    font-size: 1.8em !important;
+    color: #ee568b;
+}
+
+.myInfoFlex h2 {
+    font-family: 'dm sans';
+}
+
+.bg1 {
+    background-color: #dee4d7 !important;
+}
+
+.bg2 {
+    background-color: #faebbe !important;
+}
+
+.bg3 {
+    background-color: #ffe1e9 !important;
+}
+
+.myMapSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myMapSection h2{
+    font-family: 'gt-alpina';
+    font-size: 2em !important;
+}
+
+#map {
+   width: 96%;
+   height: 50vh !important;
+   margin: 30px !important;
+   border-radius: 10px !important;
+}

@@ -1,0 +1,265 @@
+/* LOG IN PAGE CSS */
+#section1 {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, #ffaacbb0, #ffe8aab0);
+}
+
+.my-login {
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container,
+.side-img {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-img {
+    position: relative;
+    right: -7%;
+}
+
+.form-container {
+    position: relative;
+    left: -7%;
+}
+
+.side-img img {
+    width: 39dvw;
+}
+
+
+.form-container h2 {
+    font-size: 3em;
+    color: #464545;
+}
+
+form {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox {
+    width: 70%;
+    height: 70%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* box-shadow: 1px 2px 15px #2c2c2c; */
+    border-radius: 20px;
+}
+
+.formbox p a,
+.formbox-reg p a {
+    color: #ee568b;
+    text-transform: capitalize;
+}
+
+.formbox-reg p,
+.formbox p {
+    font-size: 0.95em;
+    margin: 5px;
+}
+
+.myinput {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myinput label {
+    margin: 10px 3px !important;
+    color: #5e5c5ca1;
+}
+
+.myinput input {
+    width: 70%;
+    height: 30px;
+    background: transparent;
+    margin: 15px 10px !important;
+    border: none;
+    border-bottom: 2px solid #5e5c5c70;
+}
+
+.myinput-check {
+    font-size: 0.8em;
+    color: #5e5c5c;
+    letter-spacing: 1px;
+}
+
+#alerter-text {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    color: red;
+    font-size: 0.77em;
+    text-transform: capitalize;
+}
+
+#h4-alert {
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    padding: 15px 10px;
+    position: relative;
+    font-size: 1.05em;
+    top: 10%;
+    color: #fff;
+    background-color: #ee568b;
+    border-radius: 15px;
+}
+
+/* Popup container */
+#popup-container {
+    display: none;
+    /* Initially hide the pop-up */
+    position: fixed;
+    margin: auto;
+    text-align: center;
+    top: 2%;
+    left: 18%;
+    width: 65%;
+    height: 20%;
+    z-index: 9999;
+}
+
+/* Popup content */
+#popup-content {
+    background-color: #ee568b;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+
+/* Close button (x-mark icon) */
+.close-button {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.myinput input:focus {
+    outline: none;
+    border-bottom: 2px solid #ee568b;
+}
+
+::placeholder {
+    font-size: 0.88em;
+    color: #5e5c5ca1;
+}
+
+.enter-btn {
+    width: 25%;
+    margin: 20px 10px 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'dm sans', serif;
+    height: 40px;
+    border: none;
+    background-color: #ee568b;
+    border-radius: 5px;
+    color: #fff;
+}
+
+input[type=button]:hover {
+    box-shadow: 1px 1px 10px #00000062;
+}
+
+@media (max-width:950px) {
+
+    .formbox,
+    .formbox-reg {
+        width: 100%;
+        height: 100%;
+    }
+
+    #section1 {
+        width: 100%;
+        overflow: visible;
+        height: 100vh;
+        position: relative;
+        background: linear-gradient(to bottom, #ffaacbb0, #ffe8aab0);
+    }
+
+    .my-login {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .side-img {
+        display: none;
+    }
+
+    .form-container {
+        position: relative;
+        left: 0%;
+    }
+
+    .side-img img {
+        display: none;
+    }
+
+
+    .form-container h2 {
+        font-size: 4.3em;
+        color: #464545;
+    }
+
+    form {
+        padding: 10px;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formbox {
+        width: 100%;
+        height: 80vh;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        /* box-shadow: 1px 2px 15px #2c2c2c; */
+        border-radius: 20px;
+    }
+
+}
+
+/* REGISTER PAGE */
+
+.formbox-reg {
+    width: 70%;
+    height: 95%;
+    padding: 35px 10px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* box-shadow: 1px 1px 15px #ee568b5d; */
+    border-radius: 20px;
+}
